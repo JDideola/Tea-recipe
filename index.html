@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tea Recipe</title>
+    <!-- add the font awesome link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>How to make good brew Tea</h1>
+				<img src="https://i.imgur.com/VVRBvwY.jpg" alt="A man drinking tea">
+	
+				<p>Tea is a flavourful way of getting enough fluid into your body each day.
+	        Not only that, studies have shown teas can help protect your teeth and your heart. Now imagine reaping all of these benefits as you enjoy a sensationally good brew tea.</p>
+	
+			</header>
+			
+			<section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+				<!-- add a fontawesome icon here -->
+				<h2>ingredients <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></h2>
+				<ul>
+					<li>1 Tea bag</li>
+					<li>Water</li>
+					<li>Milk (Optional)</li>
+					<li>Sugar or honey (Optional)</li>
+				</ul>
+			</section>
+			
+			<section onmouseover="preparationHover()" onmouseout="preparationNormal()">
+				<!-- add a fontawesome icon here -->
+				<h2>preparation <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+				<ol>
+					<li>
+	                Run the tap a little so the water's nicely aerated, and only boil it once to keep the oxygen level up. Oxygen in water helps to create flavour.
+					</li>
+					<li>
+						Place a tea bag into your mug 
+					</li>
+					<li>
+						Pour the hot water over the tea bag and stir briefly.
+					</li>
+					<li>
+						Leave 3-4 minutes for the tea to unlock all its flavour. This is a perfect time to keep yourself busy, either reading a book or daydreaming.
+					</li>
+					<li>
+						Before removing the tea bag, gently press it against the side of the mug using a spoon. Be carefull not to press it too much or it will become bitter.
+					</li>
+					<li>
+						If you want, you can add milk, sugar or honey. Whichever you prefer.
+					<li>
+						Enjoy your tea!
+					</li>
+				</ol>
+			</section>
+			
+			<footer>
+				<p>Copyright 2022</p>
+			</footer>
+		</div>
+		<script>
+		
+	    function ingredientsHover(){
+		   document.getElementById("ingredients").style.fontSize = "300%";
+		}
+		function ingredientsNormal(){
+        document.getElementById("ingredients").style.fontSize = "100%";
+        }
+    	function preparationHover(){	
+    	document.getElementById("preparation").style.fontSize = "300%";	
+    	}
+    	function preparationNormal(){
+        document.getElementById("preparation").style.fontSize = "100%";
+
+        }
+    	
+    	
+        </script>
+	</body>
+</html>
